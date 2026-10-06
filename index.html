@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mi Tienda</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- ENCABEZADO -->
+    <header>
+        <h1>Mi Tienda</h1>
+        <p>Productos pensados para vos</p>
+    </header>
+
+
+    <!-- MENÚ DE NAVEGACIÓN -->
+    <nav>
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#productos">Productos</a></li>
+            <li><a href="#resenas">Reseñas</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main>
+
+        <!-- INICIO -->
+        <section id="inicio" class="inicio">
+            <div class="inicio-contenido">
+                <h2>Bienvenidos a Mi Tienda</h2>
+
+                <p>
+                    Descubrí nuestros productos y encontrá
+                    lo que estás buscando.
+                </p>
+
+                <a href="#productos" class="boton">
+                    Ver productos
+                </a>
+            </div>
+        </section>
+
+
+        <!-- PRODUCTOS -->
+        <section id="productos" class="productos">
+            <h2>Nuestros Productos</h2>
+
+            <div class="productos-container">
+
+                <article class="card">
+                    <div class="producto-imagen">
+                        <img src="img/Producto1.jpg" alt="Producto 1">
+                    </div>
+
+                    <h3>Producto 1</h3>
+
+                    <p>
+                        Un producto de excelente calidad
+                        pensado para vos.
+                    </p>
+
+                    <span class="precio">$20.000</span>
+                </article>
+
+
+                <article class="card">
+                    <div class="producto-imagen">
+                        <img src="img/Producto2.jpg" alt="Producto 2">
+                    </div>
+
+                    <h3>Produto 2</h3>
+
+                    <p>
+                        Una opción ideal para regalar
+                        o disfrutar todos los días.
+                    </p>
+
+                    <span class="precio">$30.000</span>
+                </article>
+
+
+                <article class="card">
+                    <div class="producto-imagen">
+                        <img src="img/Producto3.jpg" alt="Producto 3">
+                    </div>
+
+                    <h3>Producto 3</h3>
+
+                    <p>
+                        Calidad y diseño en un solo
+                        producto.
+                    </p>
+
+                    <span class="precio">$55.000</span>
+                </article>
+
+            </div>
+        </section>
+
+
+        <!-- RESEÑAS -->
+        <section id="resenas" class="resenas">
+            <h2>Reseñas de nuestros clientes</h2>
+
+            <div class="resenas-container">
+
+                <article class="resena">
+                    <h3>María</h3>
+
+                    <p>
+                        "Excelente atención y productos
+                        de muy buena calidad."
+                    </p>
+
+                    <span>★★★★★</span>
+                </article>
+
+
+                <article class="resena">
+                    <h3>Juan</h3>
+
+                    <p>
+                        "La compra fue rápida y el producto
+                        llegó en perfectas condiciones."
+                    </p>
+
+                    <span>★★★★★</span>
+                </article>
+
+
+                <article class="resena">
+                    <h3>Lucía</h3>
+
+                    <p>
+                        "Muy recomendable. Volvería a comprar
+                        sin ninguna duda."
+                    </p>
+
+                    <span>★★★★★</span>
+                </article>
+
+
+                <article class="resena">
+                    <h3>Pedro</h3>
+
+                    <p>
+                        "Muy buena experiencia y excelente
+                        relación entre precio y calidad."
+                    </p>
+
+                    <span>★★★★☆</span>
+                </article>
+
+            </div>
+        </section>
+
+
+        <!-- CONTACTO -->
+        <section id="contacto" class="contacto">
+
+            <div class="contacto-contenido">
+
+                <h2>Contacto</h2>
+
+                <p>
+                    ¿Tenés alguna consulta?
+                    Completá el formulario y nos pondremos
+                    en contacto con vos.
+                </p>
+
+
+                <!-- FORMULARIO FORMSPREE -->
+                <form
+                    action="https://formspree.io/f/mjygkqqq"
+                    method="POST"
+                >
+
+                    <div class="campo">
+                        <label for="nombre">
+                            Nombre:
+                        </label>
+
+                        <input
+                            type="text"
+                            id="nombre"
+                            name="nombre"
+                            placeholder="Ingresá tu nombre"
+                            required
+                        >
+                    </div>
+
+
+                    <div class="campo">
+                        <label for="email">
+                            Correo electrónico:
+                        </label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="ejemplo@correo.com"
+                            required
+                        >
+                    </div>
+
+
+                    <div class="campo">
+                        <label for="mensaje">
+                            Mensaje:
+                        </label>
+
+                        <textarea
+                            id="mensaje"
+                            name="mensaje"
+                            rows="6"
+                            placeholder="Escribí tu mensaje..."
+                            required
+                        ></textarea>
+                    </div>
+
+
+                    <button type="submit">
+                        Enviar mensaje
+                    </button>
+
+                </form>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- PIE DE PÁGINA -->
+    <footer>
+        <p>
+            &copy; 2026 Mi Tienda - Todos los derechos reservados.
+        </p>
+    </footer>
+
+</body>
+
+</html>
